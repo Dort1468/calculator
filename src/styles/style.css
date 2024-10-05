@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+.wrapper {
+  background-color: rgb(172, 181, 181);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.calculator {
+  border: 2px solid black;
+  border-radius: 6px;
+  margin: auto;
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(209, 209, 210);
+}
+
+#display {
+  border: 2px solid gray;
+  border-radius: 6px;
+  background-color: rgba(159, 158, 158, 0.603);
+  margin: 10px;
+  height: 20%;
+  font-size: 4rem;
+  text-align: right;
+  overflow: hidden;
+  padding: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.buttons {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 80%;
+  gap: 5px;
+}
+.buttons button {
+  background: rgba(255, 171, 54, 0.867);
+  border: rgba(255, 171, 54, 0.867);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px 14px;
+  text-align: center;
+  outline: 0;
+  font-size: 1.5rem;
+}
+.buttons button:hover, .buttons button:active {
+  background-color: initial;
+  background-position: 0 0;
+  background: rgba(255, 171, 54, 0.526);
+}
+
+.add-btn {
+  grid-row: span 2;
+}
+
+#clear {
+  background-color: rgba(255, 98, 0, 0.814);
+}
+#clear:hover, #clear:active {
+  background-color: initial;
+  background-position: 0 0;
+  background: rgba(255, 98, 0, 0.632);
+}/*# sourceMappingURL=style.css.map */
